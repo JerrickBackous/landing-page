@@ -1,5 +1,8 @@
-div.hero {
+body {
     font-family: sans-serif;
+}
+
+div.hero {
     background-color: #1F2937;
 }
 
@@ -75,17 +78,17 @@ p.header_link {
     margin-top: 0px;
 }
 
-button.signup_hero {
+button {
     color: white;
     font-size: 18px;
     font-weight: bold;
     background-color: #3882F6;
-    border: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 5px;
+    border: 5px solid #3882F6;
 }
 
 div.random_info {
@@ -97,7 +100,7 @@ div.random_info {
 
 span.random_text {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 900;
     padding-bottom: 40px;
 }
 
@@ -111,7 +114,8 @@ div.four_boxes {
 div.box_container {
     display: flex;
     flex-direction: column;
-    flex-basis: 140px;
+    flex-basis: 150px;
+    gap: 10px;
     justify-content: center;
 }
 
@@ -145,8 +149,36 @@ div.cta_white {
 div.call_to_action {
     background-color: #3882F6;
     display: flex;
+    justify-content: center;
+    border-radius: 10px;
     gap: 50px;
+    color: white;
+    min-width: 300px;
+    align-items: center;
 }
 
+div.cta_text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300;
+    gap: 5px;
+    margin-left: 30px;
+    min-width: 100px;
+}
 
+h3.cta {
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
 
+p.cta {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+button.signup_cta {
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 22;
+    min-width: 130px;
+}
